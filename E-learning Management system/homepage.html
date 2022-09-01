@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<title>Explorelms-Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html 
+{
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bg1.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button 
+{
+  padding: 24px;
+}
+
+.button1
+{
+
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 22px 18px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: darkgrey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content b {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-card" style="background-color: #f5f5f5;" id="myNavbar">
+    <img src="logo.png" alt="Logo" width="80" height="80" style="float:left">
+       <div class="w3-right w3-hide-small">
+         <div class="dropdown">
+            <button class="dropbtn"><i class="material-icons">login</i> LOGIN</button>
+          <div class="dropdown-content">
+              <a href="studentlogin.html" class="w3-bar-item w3-button w3-hover-green">STUDENT </a>
+              <a href="facultylogin.html" class="w3-bar-item w3-button w3-hover-blue">FACULTY </a>
+              <a href="adminlogin.html" class="w3-bar-item w3-button w3-hover-red">ADMIN </a>
+          </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="material-icons">how_to_reg</i> REGISTER</button>
+          <div class="dropdown-content">
+              <a href="studentregister.html" class="w3-bar-item w3-button w3-hover-green">STUDENT</a>
+              <a href="facultyregister.html" class="w3-bar-item w3-button w3-hover-blue">FACULTY</a>
+              <a href="adminregister.html" class="w3-bar-item w3-button w3-hover-red">ADMIN</a>
+          </div>
+        </div>
+  <!--<a href="#features" class="w3-bar-item w3-button"><i class="material-icons">key</i> FEATURES</a> -->
+      <a href="#about" class="w3-bar-item w3-button"><i class="material-icons">group</i> ABOUT</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="material-icons">email</i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:36px">
+    <span class="w3-jumbo w3-hide-small">Unlock the power of learning </span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Unlock the power of learning </span><br>
+    <span class="w3-large">Educators are powerful people doing important, life-changing things. Explorelms doesn't get in the way of that—it just makes those important, life-changing things easier to do and easier to share.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+</header>
+
+<!--
+<div class="w3-container" style="padding:100px 16px" id="features">
+  <p class="w3-center w3-xlarge">Key features</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive UI</p>
+      <p>Interactive user interface with dashboard support to enhance user interaction and keep track of online training.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-stream w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Course Management</p>
+      <p>Allows trainers and learners to manage the courses according to their preferences</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-user-shield w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Security & privacy</p>
+      <p>Maintain data integrity and security through protective firewalls.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-comments w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Query Resolution</p>
+      <p>Trainees can raise queries, discuss course content, and participate in forum discussions to obtain solutions to their queries.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-chart-line w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Progress Tracking</p>
+      <p>Tracking learner’s capability with regards to assignments submissions and exam results</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-book-reader w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Online Tests</p>
+      <p>Provides quality and effective online assessments with assignments, quizzes online exams,and accurate grading system.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-server w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Role Management</p>
+      <p>Design your training groups based on roles, designations, performances, etc. to access/restrict features and send notifications.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fas fa-upload w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Upload study materials</p>
+      <p>Allows faculty members to upload all types of documents, video files and audio files in their respective course dashboard </p>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="w3-container w3-light-grey" style="padding:24px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m8">
+      <h3>"Technology will never replace great teachers, but technology in the hands of a great teacher can be transformational"</h3>
+     </div>
+    <div class="w3-col m4 ">
+      <img class="w3-image w3-round-large" src="img01.jpg" alt="lms">
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-blue-gray" style="padding:50px 8px" id=about>
+  <p class="w3-center w3-xlarge">ABOUT US</p>
+  <div class="w3-row-padding">
+    <div class="w3-col w3-center m12">
+      <h3>Our website was founded with one goal in mind: providing people from all walks of life with an affordable, user-friendly learning platform. Our innovative courses gives our users the opportunity to expand their horizons and learn new skills - all from the comfort of their own device. Explore our lms and hope you enjoy it.</h3>
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large" src="img03.jpg" alt="lms">
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large" src="s1.jpg" alt="lms">
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large" src="s11.jpg" alt="lms">
+    </div>
+    <div class="w3-col m3">
+      <img class="w3-image w3-round-large" src="img08.jpg" alt="lms">
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-grey" style="padding:70px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chennai, India</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 91+ 9191919191</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: explorelms@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p> copyright <i class="fa fa-copyright"></i> 2021 by explorelms</p>
+</footer>
+ 
+<script>
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() 
+{
+  if (mySidebar.style.display === 'block') 
+  {
+    mySidebar.style.display = 'none';
+  } 
+  else
+  {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() 
+{
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

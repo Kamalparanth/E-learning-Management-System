@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+<title>Student Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> 
+<style>
+
+body, html 
+{
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  line-height: 1.8;
+  background-position: center;
+  background-size: cover;
+  background-image: url("b8.jpg");
+  min-height: 100%;
+}
+
+.box{
+    background: #f5f5f5;
+    color: red;
+    top: 55%;
+    left: 30%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+}
+
+p{
+    color: #f49126;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #673ab7;
+    font-size: 16px;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #069818;
+}
+
+
+a:hover
+{
+    color: red;
+}
+
+
+.w3-bar .w3-button 
+{
+  padding: 24px;
+}
+
+}
+</style>
+
+<body>
+
+ <div class="w3-top" >
+  <div class="w3-bar w3-card" style="background-color: #f5f5f5;" id="myNavbar">
+    <img src="logo.png" alt="Logo" width="80" height="80" style="float:left">
+    <div class="w3-right w3-hide-small">
+      <a href="homepage.html" class="w3-bar-item w3-button"><i class="material-icons">home</i> HOME</a>
+    </div>
+    
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+    <div class="box">
+        <h1>Student Registration</h1>
+
+        <form action="studentregister.php" method="POST">
+
+            <p>Username</p>
+            <input type="text" name="sname1" placeholder="Enter Username" required="">
+
+            <p>Your name</p>
+            <input type="text" name="studentname" placeholder="Enter your name" required="">
+
+            <p>Email</p>
+            <input type="Email" name="semail" placeholder="Enter email id" required="">
+
+            <p>Password</p>
+            <input type="password" name="spswd1" placeholder="Enter Password" required="">
+
+            <p>Retype Password</p>
+            <input type="password" name="spswd2" placeholder="Re-Enter Password" required="">
+
+            <input type="submit" name="" value="Register">
+
+            <br><br>
+            <a href="studentlogin.html">existing user, login ?</a>
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>

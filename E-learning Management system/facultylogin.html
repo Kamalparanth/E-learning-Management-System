@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+<title>Faculty Login</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body 
+    {
+        background-image: url('login.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .box{
+            background: #f5f5f5;
+            color: red;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+
+    h1
+    {
+        margin: 0px;
+        padding: 0 0 15px;
+        text-align: center;
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+    }
+
+    p{
+        color: #f49126;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        }
+
+    input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+     input[type="text"], input[type="password"] ,input[type="email"]
+    {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #673ab7;
+        font-size: 16px;
+    }
+
+    input[type="submit"]
+    {
+        border: none;
+        outline: none;
+        height: 40px;
+        background: #2196f3;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 20px;
+
+    }
+
+
+    input[type="submit"]:hover
+    {
+        cursor: pointer;
+        background: #0097a7;
+    }
+
+    a
+    {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 20px;
+        color: #069818;
+    }
+
+
+    a:hover
+    {
+        color: red;
+    }
+
+    .topright 
+    {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+    /* Add a black background color to the top navigation */
+    .topnav {
+            background-color: #F5F5F5;
+            overflow: hidden;
+    }
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 25px 25px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* Right-aligned section inside the top navigation */
+    .topnav-right {
+        float: right;
+    }
+    
+    .navbar {
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Style the links inside the navigation bar */
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+</style>
+    
+</head>
+<body>
+
+    <div class="topnav">
+    <img src="logo.png" alt="Logo" width="80" height="80" style="float:left">
+    <div class="topnav-right">
+            <a href="homepage.html" class="w3-bar-item w3-button"><i class="material-icons">home</i> HOME</a>
+    </div>
+    </div>
+
+    <div class="box">
+        <h1>FACULTY LOGIN</h1>
+        <form name="myform"  action="facultylogin.php" method="POST" >
+            <p>Username</p>
+            <input type="text" name="fname" placeholder="Enter Username " required="">
+            <p>Password</p>
+            <input type="password" name="fpswd" placeholder="Enter Password" required="">
+            <input type="submit" name="" value="Login">
+            <br><br>
+            <a href="facultyregister.html">Register for new account ?</a>
+            <br>
+            <br>
+            <a href="fchangepswd.html">Change Password??</a>
+        </form>
+    </div>
+    
+</body>
+</html>
