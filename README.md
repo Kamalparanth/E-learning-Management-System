@@ -1,6 +1,6 @@
 # E-learning-Management-System
 
-In this project, we have implemented Login, signup, change password, course creation, course deletion, course updation, and course mapping features. The users in this project will be admin, student and faculty. These users have separate login, signup and dashboard portal through which they can access the contents. 
+In this project, we have implemented Login, signup, change password, course creation, course deletion, course updation, and course mapping features. The users are admin, student and faculty. They have separate login, signup and dashboard portal through which they can access the website. 
 
 # Use Case Diagram
 ![image](https://user-images.githubusercontent.com/76084431/187976003-5b4f2dfb-79f9-4b21-b54a-0295445185b4.png)
